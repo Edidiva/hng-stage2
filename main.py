@@ -16,13 +16,13 @@ app.add_middleware(
 )
 
 
-@app.get("/", tags = ["Root"])
-async def profile():
-    return {
-       "slackUsername": "Edikan", 
-       "backend": True, 
-       "age": 26, 
-       "bio": "I am a tech ethusiast finding my way in this digital world of possibilities"}
+# @app.get("/", tags = ["Root"])
+# async def profile():
+#     return {
+#        "slackUsername": "Edikan", 
+#        "backend": True, 
+#        "age": 26, 
+#        "bio": "I am a tech ethusiast finding my way in this digital world of possibilities"}
     
     
 @app.post("/arithmetics/", response_model=models.OutputModel)
